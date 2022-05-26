@@ -1,6 +1,8 @@
 # Cardsformer
 This repository is the official implementation of Cardsformer: Grouding Language to Learn a Generalized Policy in Hearthstone.
 
+![Cardsformer Model Architecture](https://github.com/WannianXia/Cardsformer/blob/main/imgs/Cardsformer_Model.png?raw=true)
+
 ## Requirements
 Python Packages:
 - pytorch
@@ -10,6 +12,7 @@ Python Packages:
 - tensorboardx
 - tqdm
 - transformers
+
 Others:
 - [Mono](https://www.mono-project.com)
 
@@ -29,3 +32,20 @@ python train_policy.py
 
 ## Evaluation
 Baseline models of Hearthstone AI Competetion are available in [here](https://hearthstoneai.github.io/botdownloads.html). You can construct DLL files using these baseline method classes and refer them in python code. 
+
+## Pretrained Models
+Pretrained models of Cardsformer are available in [Google Drive](https://github.com/WannianXia/Cardsformer/blob/main/imgs/Cardsformer_Model.png?raw=true).
+The Policy Models are original model checkpoints, the Prediction Model is a saved dict and should be unwrapped by following:
+```
+prediction_model = PredictionModel()
+
+checkpoint_states = torch.load(model_path, map_location=device)['model_state_dict']
+
+new_state_dict = typing.OrderedDict()
+for k, v in checkpoint_states.items():
+    name = k[7:]
+    new_state_dict[name] = v
+
+prediction_model.load_state_dict(new_state_dict)
+prediction_model.eval()
+```
