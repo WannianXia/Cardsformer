@@ -49,3 +49,7 @@ for k, v in checkpoint_states.items():
 prediction_model.load_state_dict(new_state_dict)
 prediction_model.eval()
 ```
+
+## TODO
+- [ ]Provide configured running of codes
+- [ ]Detail guidance on evaluation against baseline methods
