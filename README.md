@@ -51,5 +51,5 @@ prediction_model.eval()
 ```
 
 ## TODO
-- []Provide configured running of codes
-- []Detail guidance on evaluation against baseline methods
+- [ ] Provide configured running of codes
+- [ ] Detail guidance on evaluation against baseline methods
