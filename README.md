@@ -1,5 +1,5 @@
 # Cardsformer
-This repository is the official implementation of Cardsformer: Grouding Language to Learn a Generalized Policy in Hearthstone.
+This repository is the official implementation of *Cardsformer: Grouding Language to Learn a Generalized Policy in Hearthstone*.
 
 ![Cardsformer Model Architecture](https://github.com/WannianXia/Cardsformer/blob/main/imgs/Cardsformer_Model.png?raw=true)
 
