@@ -34,7 +34,7 @@ python train_policy.py
 Baseline models of Hearthstone AI Competetion are available in [here](https://hearthstoneai.github.io/botdownloads.html). You can construct DLL files using these baseline method classes and refer them in python code. 
 
 ## Pretrained Models
-Pretrained models of Cardsformer are available in [Google Drive](https://github.com/WannianXia/Cardsformer/blob/main/imgs/Cardsformer_Model.png?raw=true).
+Pretrained models of Cardsformer are available at [Google Drive](https://drive.google.com/drive/folders/1ZY1LhhLpBr0GzcM1GYOoaiMm1pmoAduC?usp=sharing).
 The Policy Models are original model checkpoints, the Prediction Model is a saved dict and should be unwrapped by following:
 ```
 prediction_model = PredictionModel()
